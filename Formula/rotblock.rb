@@ -5,20 +5,20 @@
 class Rotblock < Formula
   desc "Shield distracting iPhone apps while your AI coding agent is working"
   homepage "https://github.com/JordaoGustavo/homebrew-rotblock"
-  version "0.1.3"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.1.3/rotblock_0.1.3_darwin_amd64.tar.gz"
-      sha256 "ec08ca2ed9b602e6824e77449f6ef3f221d85752f7a3f97bd24bd647847c3449"
+      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.2.0/rotblock_0.2.0_darwin_amd64.tar.gz"
+      sha256 "6d44d518480ce36a823246e9b43df55ace7ad69d7895396d7165e2f19824dfec"
 
       define_method(:install) do
         bin.install "rotblock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.1.3/rotblock_0.1.3_darwin_arm64.tar.gz"
-      sha256 "cae983bd4148906606b595bde8c9ec1dfb8d87a540c9fc6dd563f0e45000e8ea"
+      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.2.0/rotblock_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d3567a2c717bec273d9830de442331e0a02ad99eaa088fd517eedbab18fb2db0"
 
       define_method(:install) do
         bin.install "rotblock"
@@ -28,15 +28,15 @@ class Rotblock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.1.3/rotblock_0.1.3_linux_amd64.tar.gz"
-      sha256 "448ddd18e2e0393e2bd75ee711595f6c46b8c4b544aa885ea67b96904cbf0373"
+      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.2.0/rotblock_0.2.0_linux_amd64.tar.gz"
+      sha256 "aeacb03d28e8b20efd61ae1ace364a26a4c9d6460e2238e87fed0d7f5f0a460a"
       define_method(:install) do
         bin.install "rotblock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.1.3/rotblock_0.1.3_linux_arm64.tar.gz"
-      sha256 "7e800738ca1a6cd0f6917ece27f04dbcca2e07b8e69cf3b507123f1cc6d2430c"
+      url "https://github.com/JordaoGustavo/homebrew-rotblock/releases/download/v0.2.0/rotblock_0.2.0_linux_arm64.tar.gz"
+      sha256 "6d1b5fa0b71ca67a0c84900f1cb204fd9085a9540ce991786262c000f85548a0"
       define_method(:install) do
         bin.install "rotblock"
       end
